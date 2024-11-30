@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="martinez_ruiz_joseantonio_agenda.xsd">
+    
+  <!-- Contacto 1 -->
+  <ficha categoria="empresa" zona="San Antón">
+    <nombre>Juan</nombre>
+    <apellido1>Pérez</apellido1>
+    <apellido2>Gómez</apellido2>
+    <telefono_nacional>678123456</telefono_nacional>
+    <telefono_nacional>611223344</telefono_nacional>
+    <telefono_internacional>+34 912345678</telefono_internacional>
+    <email>juan.perez@empresa.com</email>
+    <direccion_postal>
+      <calle>Calle Falsa 123</calle>
+      <codigo_postal>28001</codigo_postal>
+      <ciudad>Madrid</ciudad>
+      <pais>España</pais>
+    </direccion_postal>
+  </ficha>
+
+  <!-- Contacto 2 -->
+  <ficha categoria="particular" zona="Infante">
+    <nombre>Alicia</nombre>
+    <apellido1>Lopez</apellido1>
+    <apellido2>Vargas</apellido2>
+    <telefono_nacional>677234567</telefono_nacional>
+    <email>alicia.lopez@gmail.com</email>
+    <direccion_postal>
+      <calle>Avenida del Mar 45</calle>
+      <codigo_postal>41012</codigo_postal>
+      <ciudad>Sevilla</ciudad>
+      <pais>España</pais>
+    </direccion_postal>
+  </ficha>
+
+  <!-- Contacto 3 -->
+  <ficha categoria="comercial">
+    <nombre>Carlos</nombre>
+    <apellido1>Ruiz</apellido1>
+    <apellido2>Moreno</apellido2>
+    <telefono_nacional>688987654</telefono_nacional>
+    <telefono_internacional>+44 203123456</telefono_internacional>
+    <email>carlos.ruiz@comercial.com</email>
+    <direccion_postal>
+      <calle>Calle Mayor 10</calle>
+      <codigo_postal>29010</codigo_postal>
+      <ciudad>Málaga</ciudad>
+      <pais>España</pais>
+    </direccion_postal>
+  </ficha>
+
+  <!-- Contacto 4 -->
+  <ficha categoria="empresa" zona="Ronda Norte">
+    <nombre>Pedro</nombre>
+    <apellido1>González</apellido1>
+    <telefono_nacional>692345678</telefono_nacional>
+    <telefono_nacional>696789012</telefono_nacional>
+    <email>pedro.gonzalez@empresa.com</email>
+    <direccion_postal>
+      <calle>Paseo de la Castellana 45</calle>
+      <codigo_postal>28046</codigo_postal>
+      <ciudad>Madrid</ciudad>
+      <pais>España</pais>
+    </direccion_postal>
+  </ficha>
+
+</agenda>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Tipo de teléfono -->
+<xs:simpleType name="telefono_nacional">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[6789]\d{8}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="telefono_internacional">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+\d{2} \d{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo de dirección de email -->
+  <xs:simpleType name="email">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo de código postal -->
+  <xs:simpleType name="codigo_postal">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="10000"/>
+      <xs:maxInclusive value="99999"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo de dirección postal -->
+  <xs:complexType name="direccion_postal">
+    <xs:sequence>
+      <xs:element name="calle" type="xs:string"/>
+      <xs:element name="piso" type="xs:string" minOccurs="0"/>
+      <xs:element name="letra" type="xs:string" minOccurs="0"/>
+      <xs:element name="codigo_postal" type="codigo_postal"/>
+      <xs:element name="ciudad" type="xs:string"/>
+      <xs:element name="pais" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Tipo de ficha -->
+  <xs:complexType name="ficha">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="apellido1" type="xs:string"/>
+      <xs:element name="apellido2" type="xs:string" minOccurs="0"/>
+      <xs:element name="telefono_nacional" type="telefono_nacional" minOccurs="0" maxOccurs="5"/>
+      <xs:element name="telefono_internacional" type="telefono_internacional" minOccurs="0" maxOccurs="2"/>
+      <xs:element name="email" type="email" minOccurs="0" maxOccurs="2"/>
+      <xs:element name="direccion_postal" type="direccion_postal" minOccurs="0" maxOccurs="3"/>
+      <xs:attribute name="categoria" type="xs:string" use="required"/>
+      <xs:attribute name="zona" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Elemento principal: agenda -->
+  <xs:element name="agenda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ficha" type="ficha" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
