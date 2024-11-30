@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE prisiones SYSTEM "martinez_ruiz_joseantonio_prisiones.dtd">
+<prisiones>
+    <prision>
+        <codigo>12345</codigo>
+        <nombre>Prisión de Alcatraz</nombre>
+        <director>
+            <nombre_completo>Juan Pérez</nombre_completo>
+            <fecha_nombramiento>2010-05-15</fecha_nombramiento>
+        </director>
+        <direccion>Calle Libertad, 123, San Francisco</direccion>
+        <inauguracion>1934-08-10</inauguracion>
+        <capacidad>1000</capacidad>
+        <funcionarios>
+            <funcionario>
+                <puesto>carcelero</puesto>
+                <nombre_completo>Carlos Gómez</nombre_completo>
+                <fecha_incorporacion>2015-06-01</fecha_incorporacion>
+            </funcionario>
+            <funcionario>
+                <puesto>administrativo</puesto>
+                <nombre_completo>Alicia Sánchez</nombre_completo>
+                <fecha_incorporacion>2018-03-21</fecha_incorporacion>
+            </funcionario>
+        </funcionarios>
+        <reclusos>
+            <recluso>
+                <numero>56789</numero>
+                <nombre_completo>José Martínez</nombre_completo>
+                <numero_celda>12A</numero_celda>
+                <fecha_ingreso>2022-01-15</fecha_ingreso>
+                <duracion_condena>5 años</duracion_condena>
+                <clasificacion>posiblemente peligroso</clasificacion>
+            </recluso>
+            <recluso>
+                <numero>98765</numero>
+                <nombre_completo>Antonio Rodríguez</nombre_completo>
+                <numero_celda>15B</numero_celda>
+                <fecha_ingreso>2020-09-01</fecha_ingreso>
+                <duracion_condena>8 años</duracion_condena>
+                <clasificacion>muy peligroso</clasificacion>
+            </recluso>
+        </reclusos>
+        <celdas>
+            <celda>
+                <numero_celda>12A</numero_celda>
+                <pabellon>A</pabellon>
+                <plazas>2</plazas>
+            </celda>
+            <celda>
+                <numero_celda>15B</numero_celda>
+                <pabellon>B</pabellon>
+                <plazas>1</plazas>
+            </celda>
+        </celdas>
+    </prision>
+    <prision>
+        <codigo>67890</codigo>
+        <nombre>Prisión de Sing Sing</nombre>
+        <director>
+            <nombre_completo>Pedro Gómez</nombre_completo>
+            <fecha_nombramiento>2015-03-22</fecha_nombramiento>
+        </director>
+        <direccion>Calle Alta, 456, Nueva York</direccion>
+        <inauguracion>1931-05-01</inauguracion>
+        <capacidad>1500</capacidad>
+        <funcionarios>
+            <funcionario>
+                <puesto>carcelero</puesto>
+                <nombre_completo>Laura Pérez</nombre_completo>
+                <fecha_incorporacion>2016-08-11</fecha_incorporacion>
+            </funcionario>
+            <funcionario>
+                <puesto>personal de servicios</puesto>
+                <nombre_completo>José Díaz</nombre_completo>
+                <fecha_incorporacion>2020-11-01</fecha_incorporacion>
+            </funcionario>
+        </funcionarios>
+        <reclusos>
+            <recluso>
+                <numero>11223</numero>
+                <nombre_completo>José López</nombre_completo>
+                <numero_celda>18C</numero_celda>
+                <fecha_ingreso>2021-07-22</fecha_ingreso>
+                <duracion_condena>10 años</duracion_condena>
+                <clasificacion>peligroso</clasificacion>
+            </recluso>
+            <recluso>
+                <numero>44556</numero>
+                <nombre_completo>Rafael Sánchez</nombre_completo>
+                <numero_celda>20D</numero_celda>
+                <fecha_ingreso>2019-04-15</fecha_ingreso>
+                <duracion_condena>3 años</duracion_condena>
+                <clasificacion>no peligroso</clasificacion>
+            </recluso>
+        </reclusos>
+        <celdas>
+            <celda>
+                <numero_celda>18C</numero_celda>
+                <pabellon>C</pabellon>
+                <plazas>2</plazas>
+            </celda>
+            <celda>
+                <numero_celda>20D</numero_celda>
+                <pabellon>D</pabellon>
+                <plazas>1</plazas>
+            </celda>
+        </celdas>
+    </prision>
+</prisiones>
